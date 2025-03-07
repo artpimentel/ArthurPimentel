@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 410vh;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header {
+    background: #1f1f1f;
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .navIcons {
+    width: 100%;
+
+    flex-flow: row nowrap;
+}
+
+#header .navIcons a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#sideBar {
+    background: #1f1f1f;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    opacity: 1;
+}
+
+#sideBar.active {
+    opacity: 1;
+}
+
+#sideBar .navIcons {
+    flex-flow: column nowrap;
+}
+
+#sideBar .navIcons a {
+    background: white;
+    height: 32px;
+    width: 32px;
+    margin: 8px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home, #about {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeColumn1, #homeColumn2, #aboutColumn1, #aboutColumn2 {
+    flex: 1 1 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeColumn1 {
+    background: red;
+}
+
+
+
+#homeColumn2 {
+    background: blue;
+}
+
+#homeColumn2 img, #aboutColumn1 img {
+    background-color: #1f1f1f;
+    height: 256px;
+    width: 192px;
+}
+
+#aboutColumn1 {
+    background: yellow;
+}
+
+#aboutColumn2 {
+    background: orange;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectsContainer {
+    height: 90%;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 8px;
+}
+
+.project {
+    background: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contactsColumn1, #contactsColumn2, #contactsColumn3, #contactsColumn4 {
+    flex: 1 1 25%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactsColumn1 a, #contactsColumn2 a, #contactsColumn3 a, #contactsColumn4 a {
+    height: 128px;
+    width: 128px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#contactsColumn1 a:hover {
+    background: lightcyan;
+}
+#contactsColumn2 a:hover {
+    background: lightslategray;
+}
+#contactsColumn3 a:hover {
+    background: lightskyblue;
+}
+#contactsColumn4 a:hover {
+    background: lightgreen;
+}
