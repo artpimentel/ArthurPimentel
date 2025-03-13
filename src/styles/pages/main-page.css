@@ -1,0 +1,399 @@
+body {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*--------------------Section main----------------------*/
+
+#content {
+    width: 60%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+@media(max-width: 600px) {
+    #content {
+        width: 80%;
+    }
+}
+
+/*--------------------Section 1----------------------*/
+
+#home {
+    height: 90vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    scroll-margin-top: 10vh;
+}
+
+#homeIMG {
+    background: linear-gradient(135deg, rgba(255,0,61,1) 0%, rgba(187,0,61,1) 100%);
+    height: 192px;
+    width: 192px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 4px #ff003d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeIMG img {
+    height: 240px;
+    width: 192px;
+    border-bottom-right-radius: 128px;
+    border-bottom-left-radius: 128px;
+
+    object-fit: cover;
+    object-position: top;
+
+    position: absolute;
+    transform: translateY(-10%);
+}
+
+#home h2 {
+    background: #ff003d;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 4px 4px rgba(187,0,61,1);
+
+    color: white;
+    font-family: ArchivoBlack;
+    text-align: center;
+
+    cursor: default;
+}
+
+#technologies {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    list-style: none;
+}
+
+#technologies li {
+    background-color: #e5e5e5;
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    cursor: default;
+}
+
+#technologies li:hover {
+    transform: scale(1.1);
+}
+
+#technologies li img {
+    height: 16px;
+    width: 16px;
+}
+
+#homeDownButton {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    text-decoration: none;
+
+    animation: infinite upDown 2s;
+    animation-direction: alternate;
+}
+
+#homeDownButton p {
+    background-color: #ff003d;
+    width: 110%;
+    box-shadow: 4px 4px rgba(187,0,61,1);
+
+    color: white;
+    font-family: ArchivoBlack;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 0 4px #ff003d;
+}
+
+#homeDownButton i {
+    background: #ff003d;
+    height: 32px;
+    width: 32px;
+    box-shadow: 2px 2px rgba(187,0,61,1);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    transition: all 0.25s ease-in-out;
+}
+
+#homeDownButton:hover i {    
+    transform: scale(1.1);
+}
+
+/*--------------------Section 2----------------------*/
+
+#about {
+    width: 100%;
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.aboutCard {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    cursor: default;
+}
+
+.aboutCard:hover {
+    transform: scale(1.1);
+}
+
+.aboutContent {
+    background: #ff003d;
+    flex: 1 1 70%;
+    padding: 12px;
+    box-shadow: 4px 4px rgba(187,0,61,1);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    color: white;
+    white-space: nowrap;
+}
+
+.aboutContent h3 {
+    font-size: 16px;
+    font-family: ArchivoBlack;
+}
+
+.aboutContent p {
+    min-width: 384px;
+
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.aboutIcon {
+    flex: 1 1 20%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aboutIcon i {
+    background: #ff003d;
+    height: 96px;
+    width: 96px;
+    box-shadow: 4px 4px rgba(187,0,61,1);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 48px;
+}
+
+@media(max-width: 600px) {
+    .aboutContent h3 {
+        font-size: 12px;
+    }
+    
+    .aboutContent p {
+        font-size: 8px;
+    }
+    
+    .aboutIcon i {
+        height: 64px;
+        width: 64px;
+
+        font-size: 32px;
+    }
+}
+
+/*--------------------Section 3----------------------*/
+
+#projects {
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+#projectsContent {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.project {
+    background: #ff003d;
+    min-width: 30%;
+    max-width: 30%;
+    aspect-ratio: 3 / 4;
+    box-shadow: 8px 8px rgba(187,0,61,1);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.projectImage {
+    height: 100%;
+    width: 100%;
+}
+
+.projectInfo {
+    background: rgba(255,255,255,0.9);
+    height: 100%;
+    width: 100%;
+    margin: 24px;
+
+    position: absolute;
+    transform: translateY(100%);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.project:hover .projectInfo {
+    transform: translateY(0);
+}
+
+.projectInfo p {
+    font-size: 12px;
+}
+
+.projectTecs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    list-style: none;
+}
+
+.projectTecs li {
+    background: #e5e5e5;
+    height: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+
+    cursor: default;
+}
+
+.projectTecs li:hover {
+    transform: scale(1.1);
+}
+
+.projectTecs li img {
+    height: 12px;
+    width: 12px;
+}
+
+#projectsButton {
+    background: #ff003d;
+    box-shadow: 4px 4px rgba(187,0,61,1);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    color: white;
+    font-family: ArchivoBlack;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#projectsButton:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width: 600px) {
+    #projectsContent {
+        flex-flow: column nowrap;
+    }
+
+    .project {
+        min-width: 160px;
+        aspect-ratio: 3 / 4;
+    }
+
+    .projectInfo p {
+        font-size: 8px;
+    }
+}
