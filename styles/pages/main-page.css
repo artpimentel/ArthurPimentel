@@ -328,6 +328,10 @@ body {
     transform: translateY(0);
 }
 
+./projectInfo h3 {
+    font-family: ArchivoBlack;
+}
+
 .projectInfo p {
     font-size: 12px;
 }
