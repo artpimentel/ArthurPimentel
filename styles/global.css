@@ -1,11 +1,11 @@
 @font-face {
     font-family: ArchivoBlack;
-    src: url(/src/styles/assets/fonts/ArchivoBlack-Regular.ttf);
+    src: url(/styles/assets/fonts/ArchivoBlack-Regular.ttf);
 }
 
 @font-face {
     font-family: Glitch;
-    src: url(/src/styles/assets/fonts/RubikGlitch-Regular.ttf);
+    src: url(/styles/assets/fonts/RubikGlitch-Regular.ttf);
 }
 
 @keyframes upDown {
