@@ -1,6 +1,6 @@
 @font-face {
     font-family: ArchivoBlack;
-    src: url(./styles/assets/fonts/ArchivoBlack-Regular.ttf);
+    src: url(styles/assets/fonts/ArchivoBlack-Regular.ttf);
 }
 
 #header {
