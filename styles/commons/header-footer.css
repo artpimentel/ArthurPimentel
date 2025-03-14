@@ -3,11 +3,6 @@
     src: url(./styles/assets/fonts/ArchivoBlack-Regular.ttf);
 }
 
-@font-face {
-    font-family: Glitch;
-    src: url(./styles/assets/fonts/RubikGlitch-Regular.ttf);
-}
-
 #header {
     background: #ff003d;
     height: 10vh;
