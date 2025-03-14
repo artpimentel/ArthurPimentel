@@ -1,7 +1,4 @@
-@font-face {
-    font-family: ArchivoBlack;
-    src: url(styles/assets/fonts/ArchivoBlack-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 #header {
     background: #ff003d;
